@@ -11,9 +11,3 @@ const connectDB = async()=>{
 }
 
 module.exports = connectDB
-// const Work = mongoose.Schema({
-//     id: String,
-//     name: String
-// })
-
-// const MyModel = mongoose.model('Work', Work, 'Work')

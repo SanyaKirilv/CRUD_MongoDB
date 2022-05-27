@@ -1,0 +1,21 @@
+<form action="/api/transactions" method="POST" id="add_transaction">
+    <div class="new_transaction">
+        <div class="form-group">
+            <label for="WorkerEmail">Worker email</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="WorkerEmail" value="" placeholder="Petrov@example.com">
+        </div>
+        <div class="form-group">
+            <label for="WorkID">WorkID</label>
+            <input type="text" name="WorkID" value="" placeholder="0">
+        </div>
+        <div class="form-group">
+            <label for="WorkType">WorkType</label>
+            <input type="text" name="WorkType" value="" placeholder="Clean">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>

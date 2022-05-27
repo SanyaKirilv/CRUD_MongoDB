@@ -1,0 +1,39 @@
+<%-include('include/_header')%>
+
+    <main id="site-main">
+        <div class="container">
+            <div class="text-center">
+                <a href="/workers" class="nav-brand text-dark">Workers</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/" class="border-shadow">
+                    <span class="text-gradient"> Back to menu </span>
+                </a>
+                <a href="/add_worker" class="border-shadow">
+                    <span class="text-gradient"> New Worker </span>
+                </a>
+            </div>
+            <form action="/workers" method="POST">
+                <table class="table">
+                    <thead class = "thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>LastName</th>
+                            <th>FirsName</th>
+                            <th>MiddleName</th>
+                            <th>Salary</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%-include('include/_showWorker')%>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+
+<%-include('include/_footer')%>

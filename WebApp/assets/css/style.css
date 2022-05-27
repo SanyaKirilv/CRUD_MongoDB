@@ -58,16 +58,27 @@ a{
     color: var(--light);
 }
 
+.text-gradient-button{
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+
 .text-gradient{
     background: linear-gradient(to right, #8e2de2, #4a00e0);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
 }
 
 #header nav{
-    background-color: #06d6a0;
-    padding: 1em 0;
+    background-color: #330099;
+    padding: 1.5em 0;
     width: 100%
 }
 
@@ -152,12 +163,41 @@ table{
 }
 
 #update_worker .form-group,
-#add_worker .form-group{
+#add_worker .form-group,
+#update_transaction .form-group,
+#add_transaction .form-group,
+#update_work .form-group,
+#add_work .form-group,
+#update_worktype .form-group,
+#add_worktype .form-group{
     margin: .4em 0;
 }
 
 #update_worker .form-group input[type="text"],
-#add_worker .form-group input[type="text"]{
+#add_worker .form-group input[type="text"],
+#update_transaction .form-group input[type="text"],
+#add_transaction .form-group input[type="text"],
+#update_work .form-group input[type="text"],
+#add_work .form-group input[type="text"],
+#update_worktype.form-group input[type="text"],
+#add_worktype .form-group input[type="text"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+#update_worker .form-group input[type="datetime-local"],
+#add_worker .form-group input[type="datetime-local"],
+#update_transaction .form-group input[type="datetime-local"],
+#add_transaction .form-group input[type="datetime-local"],
+#update_work .form-group input[type="datetime-local"],
+#add_work .form-group input[type="datetime-local"],
+#update_worktype.form-group input[type="datetime-local"],
+#add_worktype .form-group input[type="datetime-local"]{
     width: 100%;
     padding: .6em 1em;
     margin: .5em 0;
@@ -168,7 +208,13 @@ table{
 }
 
 #update_worker .form-group .btn,
-#add_worker .form-group .btn{
+#add_worker .form-group .btn,
+#update_transaction .form-group .btn,
+#add_transaction .form-group .btn,
+#update_work .form-group .btn,
+#add_work .form-group .btn,
+#update_worktype .form-group .btn,
+#add_worktype .form-group .btn{
     width: 100%;
     padding: .9em 1em;
     background-color: #16db93;
@@ -181,7 +227,13 @@ table{
 }
 
 #update_worker .form-group .btn:hover,
-#add_worker .form-group .btn:hover{
+#add_worker .form-group .btn:hover,
+#update_transaction .form-group .btn:hover,
+#add_transaction .form-group .btn:hover,
+#update_work .form-group .btn:hover,
+#add_work .form-group .btn:hover,
+#update_worktype .form-group .btn:hover,
+#add_worktype .form-group .btn:hover{
     background-color: var(--dark);
     color: var(--border);
 }

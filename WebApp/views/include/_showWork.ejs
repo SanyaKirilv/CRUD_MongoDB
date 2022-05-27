@@ -1,0 +1,16 @@
+<% for(var i = 0; i < works.length; i++){ %>
+<tr>
+    <td><%= i + 1%></td>
+    <td><%= works[i].StartDate %></td>
+    <td><%= works[i].EndDate %></td>
+    <td><%= works[i].WorkersCount %></td>
+    <td>
+        <a href="/update_work?id=<%=works[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fa fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id=<%=works[i]._id%>>
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+<% } %>

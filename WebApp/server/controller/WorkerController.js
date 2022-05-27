@@ -1,6 +1,5 @@
 var Workerdb = require('../model/Worker')
 
-//create and save new Worker
 exports.create = (req, res) => {
     if(!req.body){
         return res.status(400).send({message: 'Content can not be empty'})
@@ -24,7 +23,6 @@ exports.create = (req, res) => {
 
 }
 
-//retrive and return all Workers/ single Worker
 exports.find = (req, res) => {
 
     if(req.query.id){
@@ -49,7 +47,6 @@ exports.find = (req, res) => {
     }
 }
 
-//update a new identified Worker by WorkerID
 exports.update = (req, res) => {
     if(!req.body){
         return res.status(400).send({message: 'Data to update can not be empty!'})
@@ -68,7 +65,6 @@ exports.update = (req, res) => {
 
 }
 
-//delete a Worker with specified WorkerID in the request
 exports.delete = (req, res) => {
     const id = req.params.id
     Workerdb.findByIdAndDelete(id).then(data => {

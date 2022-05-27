@@ -1,0 +1,16 @@
+<% for(var i = 0; i < transactions.length; i++){ %>
+<tr>
+    <td><%= i + 1%></td>
+    <td><%= transactions[i].WorkerEmail %></td>
+    <td><%= transactions[i].WorkID %></td>
+    <td><%= transactions[i].WorkType %></td>
+    <td>
+        <a href="/update_transaction?id=<%=transactions[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fa fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id=<%=transactions[i]._id%>>
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+<% } %>
